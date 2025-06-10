@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "titulo": "Bienvenido a mi blog",
+    "autor": "Sebastián",
+    "fecha": "2025-06-10",
+    "contenido": "Este es mi primer post en PHP. ¡Vamos aprendiendo!"
+  },
+  {
+    "id": 2,
+    "titulo": "Segundo artículo",
+    "autor": "Sebastián",
+    "fecha": "2025-06-09",
+    "contenido": "Hoy hablamos sobre cómo usar arrays en PHP."
+  }
+]
