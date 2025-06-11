@@ -1,9 +1,7 @@
 <?php
-// Leer el contenido del archivo JSON
-$json = file_get_contents("posts.json"); // Lee el archivo como un string
+$json = file_get_contents("posts.json"); 
 
-// Convertir el JSON a un array de PHP
-$posts = json_decode($json, true); // true = convierte en array asociativo
+$posts = json_decode($json, true); 
 
 
 include("includes/header.php");
@@ -14,6 +12,7 @@ include("includes/header.php");
      <h3><?php echo $post["titulo"]; ?></h3>
         <small><strong><?php echo $post["autor"]; ?></strong> - <?php echo $post["fecha"]; ?></small>
         <p><?php echo $post["contenido"]; ?></p>
+        <a href="post.php?id=<?php echo $post["id"]; ?>">Leer más</a>
     </div>
 <?php endforeach; ?>
 <?php
